@@ -1,0 +1,111 @@
+.pre-footer {
+  background: radial-gradient(
+    circle at top left,
+    #2b1c5a,
+    #0b0624
+  );
+  padding: 100px 0;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.pre-footer-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.pre-footer-text {
+  max-width: 420px;
+  color: #c7c7d1;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+.pre-footer-list {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 36px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.pre-footer-item {
+  max-width: 520px;
+}
+
+.pre-footer-item-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.pre-footer-item-text {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.pre-footer-input-box {
+  display: flex;
+  background: #0f0f14;
+  border-radius: 10px;
+  padding: 6px;
+  gap: 6px;
+}
+
+.pre-footer-input-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  width: 220px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.pre-footer-input-box input::placeholder {
+  color: #9ca3af;
+}
+
+.pre-footer-input-box button {
+  background: #ff003d;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 22px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pre-footer-input-box button:hover {
+  background: #e60036;
+}
+
+@media (max-width: 900px) {
+  .pre-footer-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .pre-footer-input-box {
+    width: 100%;
+  }
+
+  .pre-footer-input-box input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,141 @@
+.footer {
+  padding: 80px 0 30px;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer__brand, 
+.footer__links, 
+.footer__contact, 
+.footer__social {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer__logo {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.footer__logo:hover {
+  transform: scale(1.05);
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 15px;
+  max-width: 280px;
+}
+
+.footer__copy-at {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer__links h3, 
+.footer__contact h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.footer__links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__links ul li {
+  margin-bottom: 12px;
+}
+
+.footer__links ul li a {
+  text-decoration: none;
+  color: #333333;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer__links ul li a:hover {
+  color: #dc3545;
+}
+
+.footer__contact p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.footer__phone {
+  font-weight: 700;
+}
+
+.social__icons {
+  margin-top: 100px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+
+.icon {
+  width: 35px;
+  height: 35px;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  background-color: #dc3545;
+  transform: translateY(-3px);
+}
+
+.footer__bottom {
+  text-align: center;
+}
+
+.footer__bottom hr {
+  border: 0;
+  border-top: 1px solid #eeeeee;
+  margin-bottom: 25px;
+}
+
+.footer__bottom p {
+  font-size: 13px;
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  .footer__container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer__text {
+    margin: 0 auto 15px;
+  }
+  
+  .social__icons {
+    justify-content: center;
+    margin-top: 20px;
+  }
+}

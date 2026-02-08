@@ -1,0 +1,132 @@
+
+.sidebar {
+  background-image: url("./images/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 700px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+
+.sidebar__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: clamp(24px, 5vw, 30px); 
+  color: #FFFFFF;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  animation: fadeInDown 0.8s ease;
+}
+
+.sidebar__text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 600px; 
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeIn 1.2s ease;
+}
+
+
+.sidebar__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 80px; 
+}
+
+.sidebar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.sidebar__item:hover {
+  transform: translateY(-10px); 
+}
+
+
+.sidebar__span {
+  width: 70px;
+  height: 70px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+  transition: 0.3s;
+}
+
+.sidebar__item:hover .sidebar__span {
+  background: #ffd903;
+}
+
+.sidebar__img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+.sidebar__subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+
+@media (max-width: 992px) {
+  .sidebar__list {
+    gap: 50px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .sidebar {
+    height: auto;
+    padding: 40px 15px;
+  }
+  
+  .sidebar__list {
+    flex-direction: column; 
+    gap: 30px;
+  }
+
+  .sidebar__title {
+    font-size: 22px;
+  }
+
+  .sidebar__span {
+    width: 60px;
+    height: 60px;
+  }
+}

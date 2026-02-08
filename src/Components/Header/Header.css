@@ -1,0 +1,215 @@
+/* Header Asosiy */
+.header {
+    position        : fixed;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    z-index         : 99999;
+    background-color: transparent;
+    backdrop-filter : blur(12px);
+    transition      : all 0.3s ease;
+}
+
+.header__container {
+    max-width      : 1200px;
+    margin         : 0 auto;
+    padding        : 10px 0;
+}
+
+.header__flex {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+/* Logo */
+.logo__img {
+    font-family   : Poppins;
+    font-weight   : 800;
+    font-style    : ExtraBold;
+    font-size     : 29px;
+    line-height   : 153%;
+    letter-spacing: 0%;
+    color         : #FFFFFF;
+    cursor        : pointer;
+}
+
+.logo__img:hover {
+    transform: scale(1.05);
+}
+
+
+.nav__desktop {
+    display    : none;
+    align-items: center;
+    gap        : 45px;
+}
+
+@media (min-width: 768px) {
+    .nav__desktop {
+        display: flex;
+    }
+}
+
+.nav__links {
+    display   : flex;
+    gap       : 88px;
+    list-style: none;
+    margin    : 0;
+    padding   : 0;
+}
+
+.nav__item {
+    position: relative;
+    
+}
+
+.link__text {
+    font-family   : Poppins;
+    font-weight   : 400;
+    font-size     : 16px;
+    line-height   : 100%;
+    letter-spacing: 0%;
+    color         : #FFFFFF;
+    transition    : color 0.3s;
+}
+
+.link__text:hover {
+    color: #0891b2;
+}
+
+.underline__effect {
+    position        : absolute;
+    bottom          : 0px;
+    left            : 0;
+    width           : 0;
+    height          : 2px;
+    background-color: #0891b2;
+    transition      : width 0.3s ease;
+    margin-top: 5px;
+}
+
+.nav__item:hover .underline__effect {
+    width: 100%;
+}
+
+/* Tugmalar */
+.btn__clone {
+    background-color: #D80027;
+    color           : #FFFFFF;
+    border-radius   : 6px;
+    padding         : 0.5rem 1.25rem;
+    border          : 1px solid transparent;
+    cursor          : pointer;
+    transition      : all 0.3s;
+    font-family     : Poppins;
+    font-weight     : 400;
+    font-size       : 13px;
+    line-height     : 100%;
+    letter-spacing  : 0%;
+
+}
+
+.btn__clone:hover {
+    color           : #60a5fa;
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color    : #60a5fa;
+}
+
+/* Mobile Toggle (Hamburger) */
+.mobile__toggle {
+    display       : flex;
+    flex-direction: column;
+    gap           : 6px;
+    background    : none;
+    border        : none;
+    z-index       : 60;
+    cursor        : pointer;
+}
+
+@media (min-width: 768px) {
+    .mobile__toggle {
+        display: none;
+    }
+}
+
+.bar {
+    width           : 1.75rem;
+    height          : 2px;
+    background-color: #1D2130;
+    border-radius   : 999px;
+    transition      : all 0.3s;
+}
+
+/* Hamburger Animatsiyasi */
+.active-1 {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.hide {
+    opacity: 0;
+}
+
+.active-2 {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Mobile Menu Overlay */
+.mobile__overlay {
+    position        : fixed;
+    inset           : 0;
+    height: 100vh;
+    background-color: white;
+    display         : flex;
+    flex-direction  : column;
+    align-items     : center;
+    justify-content : center;
+    gap             : 2rem;
+    transition      : all 0.5s ease;
+    transform       : translateX(100%);
+    opacity         : 0;
+    z-index         : 50;
+}
+
+.mobile__overlay.show {
+    transform: translateX(0);
+    opacity  : 1;
+}
+
+.mobile__list {
+    list-style    : none;
+    text-align    : center;
+    padding       : 0;
+    font-size     : 1.5rem;
+    font-weight   : bold;
+    display       : flex;
+    flex-direction: column;
+    gap           : 1.5rem;
+}
+
+.mobile__list a {
+    text-decoration: none;
+    color          : #1D2130;
+}
+
+.btn__clone-mobile {
+    background-color: #D80027;
+    color           : #FFFFFF;
+    border-radius   : 6px;
+    padding         : 0.5rem 1.25rem;
+    border          : 1px solid transparent;
+    cursor          : pointer;
+    transition      : all 0.3s;
+    font-family     : Poppins;
+    font-weight     : 400;
+    font-size       : 13px;
+    line-height     : 100%;
+    letter-spacing  : 0%;
+
+}
+
+.btn__clone-mobile:hover {
+    color           : #60a5fa;
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color    : #60a5fa;
+}

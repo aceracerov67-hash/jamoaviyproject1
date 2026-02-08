@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background: #021558;
+}
+.hero__link {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 209%;
+  letter-spacing: 0%;
+  color: #ffffff;
+    margin-left: 530px;
+}
+.hero__span {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #dc7000;
+  line-height: 209%;
+  letter-spacing: 0%;
+    text-align: center;
+}
+.hero__title {
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 33px;
+  color: #ffffff;
+  line-height: 180%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.hero__text {
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 188%;
+  letter-spacing: 0%;
+  text-align: center;
+}
