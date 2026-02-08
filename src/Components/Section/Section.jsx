@@ -5,7 +5,7 @@ import Oo from "./images/oo.png";
 import Hh from "./images/hh.png";
 import Uu from "./images/uu.png";
 import Mm from "./images/mm.png";
-import Aa from "./images/aa.png";
+import Aa from "./images/Aa.png";
 
 const Section = () => {
     const settings = {
