@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import Jang from './images/jang.svg';
-import Jang2 from './Images/Jang2.png';
+import Jang2 from './images/Jang2.png';
 import './About.css';
 
 
